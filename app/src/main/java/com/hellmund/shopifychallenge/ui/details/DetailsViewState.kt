@@ -21,9 +21,7 @@ data class DetailsViewState(
     }
 
     companion object {
-
         fun initial() = DetailsViewState(isLoading = true)
-
     }
 
 }

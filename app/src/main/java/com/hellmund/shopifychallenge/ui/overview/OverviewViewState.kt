@@ -21,9 +21,7 @@ data class OverviewViewState(
     }
 
     companion object {
-
         fun initial() = OverviewViewState(isLoading = true)
-
     }
 
 }

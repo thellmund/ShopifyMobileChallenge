@@ -17,7 +17,8 @@ class Navigator(private val activity: AppCompatActivity) {
 
     fun openCollectionDetails(collection: Collection) {
         activity.supportFragmentManager.transaction {
-            setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right)
+            setCustomAnimations(R.anim.enter_from_right,
+                R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right)
             replace(R.id.contentFrame, DetailsFragment.newInstance(collection))
             addToBackStack(null)
         }

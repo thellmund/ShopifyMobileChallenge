@@ -3,6 +3,7 @@ package com.hellmund.shopifychallenge.ui
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import com.hellmund.shopifychallenge.R
 import com.hellmund.shopifychallenge.ui.shared.BaseFragment
 import com.hellmund.shopifychallenge.util.navigator
 
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         if (count == 0) {
             super.onBackPressed()
         } else {
-            val fragment = supportFragmentManager.findFragmentById(com.hellmund.shopifychallenge.R.id.contentFrame) as? BaseFragment
+            val fragment = supportFragmentManager.findFragmentById(R.id.contentFrame) as? BaseFragment
             fragment?.onBackPressed()
         }
     }
