@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Shopify Challenge</string>
+    <string name="error_message">Oops, an error occurred</string>
+    <string name="retry">Retry</string>
+    <string name="no_description_available">No description available</string>
+    <string name="collections">Collections</string>
+    <string name="collections_placeholder_title">No collections</string>
+    <string name="collections_placeholder_body">We couldn’t find any collections. Oopsie.</string>
+    <string name="details_placeholder_title">No products</string>
+    <string name="details_placeholder_body">Whoopsie.</string>
+
+    <plurals name="variants_format_string">
+        <item quantity="one">%d variant available</item>
+        <item quantity="other">%d variants available</item>
+    </plurals>
+</resources>

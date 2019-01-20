@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/material_default_padding">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        app:civ_circle_background_color="@color/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/material_default_padding"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/inventoryCountTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Aerodynamic Concrete Clock" />
+
+    <TextView
+        android:id="@+id/inventoryCountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/material_default_padding"
+        android:layout_marginBottom="@dimen/material_small_padding"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/collectionTitleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        tools:text="2 variants" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/collectionImageView"
+        android:layout_width="@dimen/thumbnail_size"
+        android:layout_height="@dimen/thumbnail_size"
+        android:layout_marginStart="@dimen/material_default_padding"
+        android:layout_marginTop="@dimen/material_small_padding"
+        android:layout_marginEnd="@dimen/material_small_padding"
+        app:civ_circle_background_color="@color/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/collectionTitleTextView"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/inventoryCountTextView" />
+
+    <TextView
+        android:id="@+id/collectionTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/collectionImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/collectionImageView"
+        app:layout_constraintTop_toTopOf="@id/collectionImageView"
+        tools:text="Aerodynamic collection" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
